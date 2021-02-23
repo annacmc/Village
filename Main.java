@@ -19,6 +19,7 @@ class Person {
     // todo: Include at least four other 'traits' that a Person might have that usually differ from other People.
     private String surname;
     private String firstname;
+    private String haircolour;
 
 
     // todo: Update this constructor to include the additional traits you made.
