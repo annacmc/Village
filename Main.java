@@ -4,7 +4,7 @@ public class Main {
         // todo: Create several Person objects to create yourself a little Village. Store these so you can print them later.
         // You can either hardcode these in, or better yet, ask the user for information about them! If you do this, you might want to define a helper function.
 
-        System.out.println("Hello world!");
+        //testing creating new people
 
         // todo: One person just got married. They changed their surname!
 
