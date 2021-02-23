@@ -16,7 +16,7 @@ public class Main {
 }
 
 class Person {
-    // todo: Include at least four other 'traits' that a Person might have that usually differ from other People.
+    // Include at least four other 'traits' that a Person might have that usually differ from other People.
     private String surname;
     private String firstname;
     private String haircolour;
