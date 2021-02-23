@@ -24,7 +24,7 @@ class Person {
     private String birthdate;
 
 
-    // todo: Update this constructor to include the additional traits you made.
+    // Update this constructor to include the additional traits you made.
     public Person(String surname, String firstname, String haircolour, String eyecolour, String birthdate) {
         this.surname = surname;
         this.firstname = firstname;
