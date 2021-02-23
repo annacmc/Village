@@ -21,6 +21,7 @@ class Person {
     private String firstname;
     private String haircolour;
     private String eyecolour;
+    private String birthdate;
 
 
     // todo: Update this constructor to include the additional traits you made.
