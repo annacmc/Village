@@ -4,7 +4,7 @@ public class Main {
         // todo: Create several Person objects to create yourself a little Village. Store these so you can print them later.
         // You can either hardcode these in, or better yet, ask the user for information about them! If you do this, you might want to define a helper function.
 
-        System.out.println("Hello world!");
+        //testing creating new people
 
         // todo: One person just got married. They changed their surname!
 
@@ -24,7 +24,7 @@ class Person {
     private String birthdate;
 
 
-    // todo: Update this constructor to include the additional traits you made.
+    // Update this constructor to include the additional traits you made.
     public Person(String surname, String firstname, String haircolour, String eyecolour, String birthdate) {
         this.surname = surname;
         this.firstname = firstname;
@@ -38,8 +38,8 @@ class Person {
 
     }
 
-    // todo: Create a sensible toString implementation so each Person object can be printed out.
+    // Create a sensible toString implementation so each Person object can be printed out.
     public String toString() {
-        return "";
+        return String.format("%s %s with %s hair, %s eyes, born on %s", this.firstname, this.surname, this.haircolour, this.eyecolour, this.birthdate);
     }
 }
