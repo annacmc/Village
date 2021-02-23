@@ -16,7 +16,7 @@ public class Main {
 }
 
 class Person {
-    // todo: Include at least four other 'traits' that a Person might have that usually differ from other People.
+    // Include at least four other 'traits' that a Person might have that usually differ from other People.
     private String surname;
     private String firstname;
     private String haircolour;
@@ -25,8 +25,12 @@ class Person {
 
 
     // todo: Update this constructor to include the additional traits you made.
-    public Person (String surname) {
+    public Person(String surname, String firstname, String haircolour, String eyecolour, String birthdate) {
         this.surname = surname;
+        this.firstname = firstname;
+        this.haircolour = haircolour;
+        this.eyecolour = eyecolour;
+        this.birthdate = birthdate;
     }
 
     // todo: Implement
