@@ -38,7 +38,7 @@ class Person {
 
     }
 
-    // todo: Create a sensible toString implementation so each Person object can be printed out.
+    // Create a sensible toString implementation so each Person object can be printed out.
     public String toString() {
         return "";
     }
