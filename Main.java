@@ -10,6 +10,10 @@ public class Main {
         //testing creating new people
         Person person = new Person("McPhee", "Anna", "Brown", "Brown", "May 27, 1986");
 
+        String myTest = myQuestions();
+
+
+
         // todo: One person just got married. They changed their surname!
 
 
