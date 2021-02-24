@@ -44,6 +44,6 @@ class Person {
 
     // Create a sensible toString implementation so each Person object can be printed out.
     public String toString() {
-        return String.format("%s %s with %s hair, %s eyes, born on %s", this.firstname, this.surname, this.haircolour, this.eyecolour, this.birthdate);
+        return String.format("%s %s with %s hair, %s eyes, born on %s.", this.firstname, this.surname, this.haircolour, this.eyecolour, this.birthdate);
     }
 }
