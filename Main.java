@@ -11,24 +11,22 @@ public class Main {
         Person person = new Person("McPhee", "Anna", "Brown", "Brown", "May 27, 1986");
 
         //call method to ask questions and populate arrayList with answers
-        ArrayList<Person> myTest = myQuestions();
-        
-
-        System.out.println(myTest);
-
+        ArrayList<Person> people = myQuestions();
 
 
         // todo: One person just got married. They changed their surname!
 
 
-        // todo: Print out each Person in the Village (make sure you have implemented the Person.toString() method first)
+        // Print out each Person in the Village (make sure you have implemented the Person.toString() method first)
 
-        //System.out.println(person);
+        for (int i = 0; i < people.size(); i++) {
+            System.out.println(people.get(i));
+        }
 
     }
 
 
-    // todo: define a helper function for questioning user
+    // define a helper function for questioning user
 
     public static ArrayList<Person> myQuestions() throws IOException {
         char quit = 'Y';
