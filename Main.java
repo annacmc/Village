@@ -9,33 +9,22 @@ public class Main {
 
         ArrayList<Person> people = myQuestions();  //call method to ask questions and populate arrayList with People
 
-        //call method to ask questions and populate arrayList with answers
-        ArrayList<Person> people = myQuestions();
+        // One person just got married. They changed their surname!
 
-
-        // todo: One person just got married. They changed their surname!
-
-        // Choose a random villager
-        Random randomGenerator = new Random();
-        int index = randomGenerator.nextInt(people.size());
-        Person randomItem = people.get(index);
-        System.out.println(randomItem.fullNameString() + "Is getting married! They Changed their surname!");
-
-
-        // First one is changing name to match second one. Call changeSurname
-
-        // Print update. eg String.format("%s got married! Their surname is now %s", this.firstname, this.surname);
-
+        Person spouse = people.get(0); // take first person in village to get married
+        String oldName = spouse.nameString(); // define old name
+        spouse.changeSurname("Smith"); // use changeSurname to change surname
+        String newName = spouse.nameString(); // define new name
+        System.out.println("\n"+oldName+" got married, and is now "+newName+"!\n"); // output old + new names
 
 
         // Print out each Person in the Village (make sure you have implemented the Person.toString() method first)
-        System.out.println("Every Person in the Village:");
+        System.out.println("----------\nEvery Person in the Village:\n----------\n");
         for (int i = 0; i < people.size(); i++) {
-            System.out.println(people.get(i));
+            System.out.println(i+1+"."+people.get(i));
         }
 
     }
-
 
     // define a helper function for questioning user
 
