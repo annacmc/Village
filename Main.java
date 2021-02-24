@@ -19,7 +19,9 @@ public class Main {
 
         // Print out each Person in the Village (make sure you have implemented the Person.toString() method first)
 
-        //System.out.println(person);
+        for (int i = 0; i < people.size(); i++) {
+            System.out.println(people.get(i));
+        }
 
     }
 
