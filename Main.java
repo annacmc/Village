@@ -110,4 +110,10 @@ class Person {
     public String toString() {
         return String.format("%s %s with %s hair, %s eyes, born on %s.", this.firstname, this.surname, this.haircolour, this.eyecolour, this.birthdate);
     }
+
+    // Method to output just the fullname
+
+    public String fullNameString() {
+        return String.format(" %s %s ", this.firstname, this.surname);
+    }
 }
