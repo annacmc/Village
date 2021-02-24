@@ -46,6 +46,10 @@ public class Main {
             System.out.println("Enter Birth Date: ");
             birthdate = br.readLine();
             System.out.println("Would you like to create another villager? (Y/N) ");
+            String word = br.readLine();
+            word = word.toUpperCase();
+            quit= word.charAt(0);
+
             // create instance of person
             Person person = new Person(surname, firstname, haircolour, eyecolour, birthdate);
 }
