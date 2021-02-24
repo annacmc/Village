@@ -10,7 +10,11 @@ public class Main {
         //testing creating new people
         Person person = new Person("McPhee", "Anna", "Brown", "Brown", "May 27, 1986");
 
-        String myTest = myQuestions();
+        //call method to ask questions and populate arrayList with answers
+        ArrayList<Person> myTest = myQuestions();
+        
+
+        System.out.println(myTest);
 
 
 
@@ -26,7 +30,7 @@ public class Main {
 
     // todo: define a helper function for questioning user
 
-    public ArrayList<Person> myQuestions() throws IOException {
+    public static ArrayList<Person> myQuestions() throws IOException {
         char quit = 'Y';
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
