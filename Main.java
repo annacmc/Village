@@ -7,7 +7,7 @@ public class Main {
         // Create several Person objects to create yourself a little Village. Store these so you can print them later.
         // You can either hardcode these in, or better yet, ask the user for information about them! If you do this, you might want to define a helper function.
 
-        //testing creating new people
+        ArrayList<Person> people = myQuestions();  //call method to ask questions and populate arrayList with People
         Person person = new Person("McPhee", "Anna", "Brown", "Brown", "May 27, 1986");
 
         //call method to ask questions and populate arrayList with answers
