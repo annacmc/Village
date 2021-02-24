@@ -29,7 +29,23 @@ public class Main {
     public ArrayList<Person> myQuestions() throws IOException {
         // Create an ArrayList object
         ArrayList<Person> people = new ArrayList<>();
+        // Ask for traits of each villager, loop until user decides it's enough
+        while (quit == 'Y')
+        {
+
             String firstname, surname, haircolour, eyecolour, birthdate;
+
+            System.out.println("Enter First Name: ");
+            firstname = br.readLine();
+            System.out.println("Enter Last Name: ");
+            surname = br.readLine();
+            System.out.println("Enter Hair Colour: ");
+            haircolour = br.readLine();
+            System.out.println("Enter Eye Colour: ");
+            eyecolour = br.readLine();
+            System.out.println("Enter Birth Date: ");
+            birthdate = br.readLine();
+            System.out.println("Would you like to create another villager? (Y/N) ");
             // create instance of person
             Person person = new Person(surname, firstname, haircolour, eyecolour, birthdate);
 }
