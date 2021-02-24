@@ -8,7 +8,6 @@ public class Main {
         // You can either hardcode these in, or better yet, ask the user for information about them! If you do this, you might want to define a helper function.
 
         ArrayList<Person> people = myQuestions();  //call method to ask questions and populate arrayList with People
-        Person person = new Person("McPhee", "Anna", "Brown", "Brown", "May 27, 1986");
 
         //call method to ask questions and populate arrayList with answers
         ArrayList<Person> people = myQuestions();
@@ -111,9 +110,8 @@ class Person {
         return String.format("%s %s [%s hair; %s eyes; born %s]", this.firstname, this.surname, this.haircolour, this.eyecolour, this.birthdate);
     }
 
-    // Method to output just the fullname
-
-    public String fullNameString() {
-        return String.format(" %s %s ", this.firstname, this.surname);
+    // Create a sensible toString implementation so each Person object can be printed out.
+    public String nameString() {
+        return String.format("%s %s", this.firstname, this.surname);
     }
 }
