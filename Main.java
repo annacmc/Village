@@ -29,6 +29,8 @@ public class Main {
     public ArrayList<Person> myQuestions() throws IOException {
         // Create an ArrayList object
         ArrayList<Person> people = new ArrayList<>();
+            // create instance of person
+            Person person = new Person(surname, firstname, haircolour, eyecolour, birthdate);
 }
 
 class Person {
