@@ -19,7 +19,12 @@ public class Main {
 
         // todo: Print out each Person in the Village (make sure you have implemented the Person.toString() method first)
 
+        //System.out.println(person);
+
     }
+
+
+    // todo: define a helper function for questioning user
 
     public ArrayList<Person> myQuestions() throws IOException {
 }
