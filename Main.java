@@ -1,6 +1,5 @@
 import java.io.*; // import java.io for collecting/reading input
 import java.util.ArrayList; // import the ArrayList class
-import java.util.Random; // import random for selecting random villager to get married
 
 public class Main {
 
