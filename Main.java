@@ -100,9 +100,9 @@ class Person {
         this.birthdate = birthdate;
     }
 
-    // todo: Implement
+    // Implement changeSurname
     public void changeSurname(String newSurname) {
-
+        this.surname = newSurname;
     }
 
     // Create a sensible toString implementation so each Person object can be printed out.
