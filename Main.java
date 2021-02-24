@@ -8,6 +8,7 @@ public class Main {
         // You can either hardcode these in, or better yet, ask the user for information about them! If you do this, you might want to define a helper function.
 
         //testing creating new people
+        Person person = new Person("McPhee", "Anna", "Brown", "Brown", "May 27, 1986");
 
         // todo: One person just got married. They changed their surname!
 
