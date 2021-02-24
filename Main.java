@@ -27,6 +27,8 @@ public class Main {
     // todo: define a helper function for questioning user
 
     public ArrayList<Person> myQuestions() throws IOException {
+        // Create an ArrayList object
+        ArrayList<Person> people = new ArrayList<>();
 }
 
 class Person {
