@@ -4,27 +4,27 @@ import java.util.ArrayList; // import the ArrayList class
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        // todo: Create several Person objects to create yourself a little Village. Store these so you can print them later.
+        // Create several Person objects to create yourself a little Village. Store these so you can print them later.
         // You can either hardcode these in, or better yet, ask the user for information about them! If you do this, you might want to define a helper function.
 
-        //testing creating new people
-        Person person = new Person("McPhee", "Anna", "Brown", "Brown", "May 27, 1986");
+        ArrayList<Person> people = myQuestions();  //call method to ask questions and populate arrayList with People
 
-        //call method to ask questions and populate arrayList with answers
-        ArrayList<Person> people = myQuestions();
+        // One person just got married. They changed their surname!
 
-
-        // todo: One person just got married. They changed their surname!
+        Person spouse = people.get(0); // take first person in village to get married
+        String oldName = spouse.nameString(); // define old name
+        spouse.changeSurname("Smith"); // use changeSurname to change surname
+        String newName = spouse.nameString(); // define new name
+        System.out.println("\n"+oldName+" got married, and is now "+newName+"!\n"); // output old + new names
 
 
         // Print out each Person in the Village (make sure you have implemented the Person.toString() method first)
-
+        System.out.println("----------\nEvery Person in the Village:\n----------\n");
         for (int i = 0; i < people.size(); i++) {
-            System.out.println(people.get(i));
+            System.out.println(i+1+"."+people.get(i));
         }
 
     }
-
 
     // define a helper function for questioning user
 
@@ -89,13 +89,18 @@ class Person {
         this.birthdate = birthdate;
     }
 
-    // todo: Implement
+    // Implement changeSurname
     public void changeSurname(String newSurname) {
-
+        this.surname = newSurname;
     }
 
     // Create a sensible toString implementation so each Person object can be printed out.
     public String toString() {
-        return String.format("%s %s with %s hair, %s eyes, born on %s.", this.firstname, this.surname, this.haircolour, this.eyecolour, this.birthdate);
+        return String.format("%s %s [%s hair; %s eyes; born %s]", this.firstname, this.surname, this.haircolour, this.eyecolour, this.birthdate);
+    }
+
+    // Create a sensible toString implementation so each Person object can be printed out.
+    public String nameString() {
+        return String.format("%s %s", this.firstname, this.surname);
     }
 }
