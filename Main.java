@@ -17,14 +17,14 @@ public class Main {
         // todo: One person just got married. They changed their surname!
 
 
-        // todo: Print out each Person in the Village (make sure you have implemented the Person.toString() method first)
+        // Print out each Person in the Village (make sure you have implemented the Person.toString() method first)
 
         //System.out.println(person);
 
     }
 
 
-    // todo: define a helper function for questioning user
+    // define a helper function for questioning user
 
     public static ArrayList<Person> myQuestions() throws IOException {
         char quit = 'Y';
