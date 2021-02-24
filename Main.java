@@ -16,9 +16,21 @@ public class Main {
 
         // todo: One person just got married. They changed their surname!
 
+        // Choose a random villager
+        Random randomGenerator = new Random();
+        int index = randomGenerator.nextInt(people.size());
+        Person randomItem = people.get(index);
+        System.out.println(randomItem.fullNameString() + "Is getting married! They Changed their surname!");
+
+
+        // First one is changing name to match second one. Call changeSurname
+
+        // Print update. eg String.format("%s got married! Their surname is now %s", this.firstname, this.surname);
+
+
 
         // Print out each Person in the Village (make sure you have implemented the Person.toString() method first)
-
+        System.out.println("Every Person in the Village:");
         for (int i = 0; i < people.size(); i++) {
             System.out.println(people.get(i));
         }
