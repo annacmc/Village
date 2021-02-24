@@ -4,7 +4,7 @@ import java.util.ArrayList; // import the ArrayList class
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        // todo: Create several Person objects to create yourself a little Village. Store these so you can print them later.
+        // Create several Person objects to create yourself a little Village. Store these so you can print them later.
         // You can either hardcode these in, or better yet, ask the user for information about them! If you do this, you might want to define a helper function.
 
         //testing creating new people
