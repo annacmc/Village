@@ -27,8 +27,12 @@ public class Main {
     // todo: define a helper function for questioning user
 
     public ArrayList<Person> myQuestions() throws IOException {
+        char quit = 'Y';
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         // Create an ArrayList object
         ArrayList<Person> people = new ArrayList<>();
+
         // Ask for traits of each villager, loop until user decides it's enough
         while (quit == 'Y')
         {
