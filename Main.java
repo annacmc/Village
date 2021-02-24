@@ -11,11 +11,7 @@ public class Main {
         Person person = new Person("McPhee", "Anna", "Brown", "Brown", "May 27, 1986");
 
         //call method to ask questions and populate arrayList with answers
-        ArrayList<Person> myTest = myQuestions();
-        
-
-        System.out.println(myTest);
-
+        ArrayList<Person> people = myQuestions();
 
 
         // todo: One person just got married. They changed their surname!
