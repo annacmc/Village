@@ -1,4 +1,4 @@
-import java.io.*;
+import java.io.*; // import java.io for collecting/reading input
 import java.util.ArrayList; // import the ArrayList class
 
 public class Main {
