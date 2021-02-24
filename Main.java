@@ -56,6 +56,10 @@ public class Main {
 
             // create instance of person
             Person person = new Person(surname, firstname, haircolour, eyecolour, birthdate);
+
+            // add person to people arraylist
+            people.add(person);
+
         }
         //
         br.close();
