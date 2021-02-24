@@ -29,6 +29,7 @@ public class Main {
     public ArrayList<Person> myQuestions() throws IOException {
         // Create an ArrayList object
         ArrayList<Person> people = new ArrayList<>();
+            String firstname, surname, haircolour, eyecolour, birthdate;
             // create instance of person
             Person person = new Person(surname, firstname, haircolour, eyecolour, birthdate);
 }
